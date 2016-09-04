@@ -1,0 +1,28 @@
+{
+  "name": "Facebook Notification Nuance",
+  "version": "0.5",
+  "manifest_version": 2,
+  "description": "Hide the red seducing Facebook notification bubble to focus on your 'work'",
+  "homepage_url": "https://www.dvdz.design",
+  "icons": { "16": "icon-16.png",
+             "48": "icon-48.png",
+            "128": "icon-128.png" },
+  "permissions": ["tabs", "*://*/*"],
+  "background": {
+    "page": "index.html"
+  },
+  "content_scripts": [
+    {
+    "matches": ["*://*/*"],
+    "css": ["hide.css"]
+    },
+    {
+      "matches": ["*://chrome.google.com/webstore*"],
+      "css": ["shows.css"]
+    }
+  ],
+  "browser_action": {
+    "name": "Hide the little fucker!",
+    "default_icon": "icon.png"
+  }
+}

@@ -1,2 +1,5 @@
-# Notification-Nuance
-Hide the bad appealing Facebook notifications
+# Facebook Notification Nuance
+
+Hide the red seducing Facebook notification bubble to focus on your 'work'
+
+
